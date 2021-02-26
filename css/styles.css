@@ -1,0 +1,221 @@
+:root {
+  --main-font: Roboto;
+  --secondary-font: Raleway;
+  --accent-color: #2196f3;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+/* ============= COMPONENTS ============= */
+
+.logo-link {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.logo-part-white-theme {
+  color: #000000;
+}
+
+/*.logo-part-dark-theme {
+  color: #ffffff;
+}*/
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+/* ============= END COMPONENTS ============= */
+/* ============= HEADER ============= */
+
+.navigation-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--accent-color);
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+.contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14x;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+/* ============= END HEADER ============= */
+/* ============= HERO ============= */
+
+.title-hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  /*color: #ffffff;*/
+}
+
+.modal-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  color: #ffffff;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #188ce8;
+}
+/* ============= END HERO ============= */
+/* ============= FEATURES ============= */
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.features-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* ============= END FEATURES ============= */
+
+/* ============= SERVICES ============= */
+/* ============= END SERVICES ============= */
+
+/* ============= TEAM ============= */
+
+.name-team-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.position-team-member {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* ============= END TEAM ============= */
+/* ============= FOOTER ============= */
+
+.fact-address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  /*color: #FFFFFF;*/
+}
+
+.contact {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  /*color: rgba(255, 255, 255, 0.6);*/
+}
+/* ============= END FOOTER ============= */
+/* ============= PORTFOLIO BUTTON ============= */
+
+.portfolio-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  color: #212121;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+/* ============= END PORTFOLIO BUTTON ============= */
+/* ============= WORK LIST ============= */
+
+.work-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.work-product {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* ============= END WORK LIST ============= */
