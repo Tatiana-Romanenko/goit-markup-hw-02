@@ -1,11 +1,18 @@
 :root {
-  --main-font: Roboto;
-  --secondary-font: Raleway;
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
   --accent-color: #2196f3;
+  --main-color: #212121;
+  --secondary-color: #757575;
+  --third-color: #ffffff;
+  --dark-background-color: #2f303a;
 }
 
 body {
   font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 .link {
@@ -35,9 +42,9 @@ body {
   color: #000000;
 }
 
-/*.logo-part-dark-theme {
-  color: #ffffff;
-}*/
+.logo-part-dark-theme {
+  color: var(--third-color);
+}
 
 .title {
   font-weight: 700;
@@ -45,18 +52,15 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
 }
 
 /* ============= END COMPONENTS ============= */
 /* ============= HEADER ============= */
 
 .navigation-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .navigation-link:hover,
@@ -69,11 +73,8 @@ body {
 }
 
 .contact-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14x;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--secondary-color);
 }
 
 .contact-link:hover,
@@ -83,6 +84,9 @@ body {
 /* ============= END HEADER ============= */
 /* ============= HERO ============= */
 
+.hero {
+  background-color: var(--dark-background-color);
+}
 .title-hero {
   font-weight: 900;
   font-size: 44px;
@@ -92,7 +96,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  /*color: #ffffff;*/
+  color: var(--third-color);
 }
 
 .modal-btn {
@@ -106,11 +110,11 @@ body {
   letter-spacing: 0.06em;
   cursor: pointer;
 
-  background-color: #2196f3;
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
-  color: #ffffff;
+  color: var(--third-color);
 }
 
 .modal-btn:hover,
@@ -122,19 +126,16 @@ body {
 
 .features-title {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .features-text {
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color);
 }
 /* ============= END FEATURES ============= */
 
@@ -143,48 +144,44 @@ body {
 
 /* ============= TEAM ============= */
 
-.name-team-member {
-  font-weight: 500;
+.name-team-member,
+.position-team-member {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+}
+
+.name-team-member {
+  color: var(--main-color);
 }
 
 .position-team-member {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color);
 }
 /* ============= END TEAM ============= */
 /* ============= FOOTER ============= */
 
-.fact-address {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  /*color: #FFFFFF;*/
+.footer {
+  background-color: var(--dark-background-color);
 }
-
+.fact-address,
 .contact {
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
-  /*color: rgba(255, 255, 255, 0.6);*/
+}
+.fact-address {
+  color: var(--third-color);
+}
+.contact {
+  color: rgba(255, 255, 255, 0.6);
 }
 /* ============= END FOOTER ============= */
 /* ============= PORTFOLIO BUTTON ============= */
 
 .portfolio-btn {
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
@@ -192,13 +189,13 @@ body {
   cursor: pointer;
   background-color: #f5f4fa;
   border-radius: 4px;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--third-color);
 }
 /* ============= END PORTFOLIO BUTTON ============= */
 /* ============= WORK LIST ============= */
@@ -208,7 +205,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .work-product {
@@ -216,6 +213,6 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color);
 }
 /* ============= END WORK LIST ============= */
