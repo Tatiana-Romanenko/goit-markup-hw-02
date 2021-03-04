@@ -5,6 +5,8 @@
   --main-color: #212121;
   --secondary-color: #757575;
   --third-color: #ffffff;
+  --header-logo-color: #000000;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
   --dark-background-color: #2f303a;
 }
 
@@ -39,7 +41,7 @@ body {
 }
 
 .logo-part-white-theme {
-  color: #000000;
+  color: var(--header-logo-color);
 }
 
 .logo-part-dark-theme {
@@ -172,11 +174,15 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+}
 .fact-address {
   color: var(--third-color);
 }
 .contact {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contact-color);
 }
 /* ============= END FOOTER ============= */
 /* ============= PORTFOLIO BUTTON ============= */
